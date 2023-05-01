@@ -49,7 +49,7 @@ export default function Contact({ settings }) {
         Contact
       </h1>
       <div className="text-center">
-        <p className="text-lg">Don't be shy to reach out to me.</p>
+        <p className="text-lg">Dont be shy to reach out to me.</p>
       </div>
 
       <div className="grid my-10 md:grid-cols-2">
