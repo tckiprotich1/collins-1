@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
+import Portfolio from "../../components/Portfolio"
+import Skills from "../../components/Projects";
 
 export default function Post({ posts }) {
   return (
     <>
+    < Portfolio />
+    <h1 class="text-4xl py-20 font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">explore My <br />  awesome <span class="text-blue-500"> Blog Collections</span></h1>
       {posts && (
         <Container>
           <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
@@ -18,7 +22,7 @@ export default function Post({ posts }) {
             ))}
           </div>
           <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 ">
-            {posts.slice(2, 14).map(post => (
+            {posts.slice(2, 5).map(post => (
               <PostList key={post._id} post={post} aspect="square" />
             ))}
           </div>
@@ -30,7 +34,9 @@ export default function Post({ posts }) {
             </Link>
           </div>
         </Container>
+        
       )}
+      <Skills />
     </>
   );
 }

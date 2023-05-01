@@ -6,6 +6,7 @@ const nextConfig = {
     appDir: true
   },
   images: {
+    domains: ['cdn.dribbble.com'],
     formats: ["image/avif", "image/webp"],
     dangerouslyAllowSVG: true,
     remotePatterns: [{ hostname: "cdn.sanity.io" }]
