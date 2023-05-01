@@ -19,11 +19,13 @@ import { codeInput } from "@sanity/code-input";
 export const PREVIEWABLE_DOCUMENT_TYPES: string[] = ["post"];
 console.log(projectId);
 
+
+
 export default defineConfig({
   name: "default",
   title: "Stablo Template",
   basePath: "/studio",
-  projectId: projectId,
+  projectId : projectId,
   dataset: dataset,
 
   plugins: [
