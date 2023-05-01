@@ -3,7 +3,7 @@ export default function Portfolio() {
   return (
     <div>
       <Container className="min-h-screen">
-        <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+        <h1 className="mt-10 pt-30 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
           <br />
         </h1>
         <div className=" px -30 mx-auto prose max-w-2xl">

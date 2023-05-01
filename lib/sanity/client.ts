@@ -24,7 +24,8 @@ if (!projectId) {
 }
 
 /**
- * Checks if it's safe to create a client instance, as `@sanity/client` will throw an error if `projectId` is false
+ * Checks if it's safe to create a client instance,
+ * as `@sanity/client` will throw an error if `projectId` is false
  */
 const client = projectId
   ? createClient({ projectId, dataset, apiVersion, useCdn })

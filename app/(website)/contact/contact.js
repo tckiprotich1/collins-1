@@ -23,14 +23,14 @@ export default function Contact({ settings }) {
   });
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState(false);
-  // Please update the Access Key in the Sanity CMS - Site Congig Page
-  const apiKey = settings?.w3ckey || "YOUR_ACCESS_KEY_HERE";
+  // Please update the Access Key in the Sanity CMS - Site Config Page
+  const apiKey = settings?.w3ckey || "51674813-6cf9-4627-87f5-32893557e4d8";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Stablo Template",
-      subject: "New Contact Message from Stablo Website"
+      from_name: "Blog website",
+      subject: "New Message from  Website"
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -49,13 +49,13 @@ export default function Contact({ settings }) {
         Contact
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a here to help.</p>
+        <p className="text-lg">Don't be shy to reach out to me.</p>
       </div>
 
       <div className="grid my-10 md:grid-cols-2">
         <div className="my-10">
           <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Stablo
+            Contact Collins
           </h2>
           <p className="max-w-sm mt-5">
             Have something to say? We are here to help. Fill up the
@@ -65,7 +65,7 @@ export default function Contact({ settings }) {
           <div className="mt-5">
             <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
               <MapPinIcon className="w-4 h-4" />
-              <span>1734 Sanfransico, CA 93063</span>
+              <span>254796250508 Nakuru, Kenya</span>
             </div>
             {settings?.email && (
               <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
